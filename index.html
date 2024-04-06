@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body{
+      padding-top: 50px;
+      background-color: #c4c9e9;
+    }
+    .row {
+      margin-bottom: 30px; /* Add some space between rows */
+    }
+    p{
+      background-color: white;
+        /* background-color: #304FFE; */
+        padding: 25px;
+        border-radius: 3px;
+        color: black;
+    }
+    img{
+      height: 100px;
+      width: 200px;
+      box-shadow: 0px 0px 8px black;
+      border-radius: 20px;
+      border: 5px solid white;
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-left: 200px;
+    }
+    h2{
+      color: white;
+    }
+    h1{
+      color: white;
+      text-shadow: 0px 0px 8px black;
+    }
+
+    @media screen and (max-width: 320px) {
+      .container{
+        padding-left: 5px;
+      }
+  }
+
+  @media screen and (min-width: 321px) and (max-width: 768px) {
+      .container{
+        padding-left: 10px;
+      }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container{
+        padding-left: 50px;
+      }
+}
+  </style>
+</head>
+<body>
+  <h1 class="text-center mb-4">Welcome to Sudoku World</h1>
+
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-6 order-md-1">
+        <br> <br>
+        <h2>How to Play</h2>
+        <p>To play Sudoku, simply click on a cell and input the number you think belongs there. The game will provide feedback if the number is correct or incorrect. Keep filling in numbers until the entire grid is complete.
+          <br> <br>you can delete the number if it is in wrong place. <br>
+          <br> you can add suggestions for your self and add external numbers.
+        </p>
+      </div> 
+      <div class="col-md-6 order-md-2">
+        <img src="./images/play sudoku.png" alt="How to Play Sudoku" class="img-fluid"> 
+        <!-- <img src="./play sudoku.png" alt="How to Play Sudoku" class="img-fluid" style="margin-left: 30px;"> -->
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6 order-md-1">
+        <h2>Difficulty Levels</h2>
+        <p>Sudoku puzzles come in different difficulty levels: easy, medium, and hard. The difficulty is determined by the complexity of the initial setup and the strategies required to solve the puzzle.
+          <br> <br>
+          you can play sudoku for 4x4 or 9x9. <br> <br>
+          And select difficulty level like Easy, Medium and Hard.
+        </p>
+      </div>
+      <div class="col-md-6 order-md-1 images">
+        <img src="./images/ss1.png" alt="Create Your Own Sudoku" class="img-fluid">
+        <!-- <img src="./ss1.png" alt="Create Your Own Sudoku" class="img-fluid" style="margin-left: 30px;"> -->
+
+      </div>
+    </div>
+    
+
+    <div class="row">
+      <div class="col-md-6 order-md-1">
+        <h2>Importing Sudoku</h2>
+        <p>If you have a Sudoku puzzle saved elsewhere, you can import it to our platform and start solving right away. Simply copy the puzzle and paste it into the import form.</p>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <img src="./images/import file .png" alt="Importing Sudoku" class="img-fluid">
+        <!-- <img src="./import file .png" alt="Importing Sudoku" class="img-fluid" style="margin-left: 30px;"> -->
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 order-md-1">
+        <h2>Create Your Own Sudoku</h2>
+        <p>Feeling creative? You can also create your own Sudoku puzzle using our interactive grid. Once you're satisfied with your creation, you can share it with friends or challenge yourself to solve it.</p>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <img src="./images/make own ss.png" alt="Create Your Own Sudoku" class="img-fluid">
+        <!-- <img src="./make own ss.png" alt="Create Your Own Sudoku" class="img-fluid" style="margin-left: 30px;"> -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 order-md-1">
+        <h2>Start Playing</h2>
+        <p>Ready to exercise your brain and have some fun? Start playing Sudoku now by selecting a difficulty level or importing your own puzzle. Enjoy the challenge!</p>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <img src="./images/play sudoku.png" alt="Start Playing Sudoku" class="img-fluid">
+        <!-- <img src="./play sudoku.png" alt="Start Playing Sudoku" class="img-fluid" style="margin-left: 30px;"> -->
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
