@@ -77,10 +77,93 @@ footer{
       border: none;
       border-radius: 8px;
     }
+    .container1 {
+      width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: white;
+    }
+    .logo {
+        flex: 1;
+        max-width: 50%;
+    }
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+    .app-info {
+        flex: 1;
+        max-width: 50%;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .app-info h2 {
+        margin-top: 0;
+        color: black;
+    }
+    .download-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        cursor: pointer;
+    }
+    .download-button:hover {
+        background-color: #0056b3;
+        color: white;
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        .container1 {
+            flex-direction: column;
+            text-align: center;
+        }
+        .logo, .app-info {
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+  
+
 
   </style>
 </head>
 <body>
+
+  <div class="container1">
+    <div class="logo">
+        <img src="./images/sudoku logo.png" alt="Logo">
+    </div>
+    <div class="app-info">
+        <h2>MindFlex Sudoku</h2> <br>
+        <a href="./application/app-release.apk" download class="download-button">Download APK</a>
+        <h6 style="color: gray; margin-left: 0;">Downloads: <span id="download-count">0</span></h6>
+    </div>
+  </div>
+  <script>
+    // Get elements
+    var downloadLink = document.getElementById("download-link");
+    var downloadCount = document.getElementById("download-count");
+  
+    // Add click event listener to the download link
+    downloadLink.addEventListener("click", function() {
+      // Increment download count
+      var currentCount = parseInt(downloadCount.textContent);
+      var newCount = currentCount + 1;
+      downloadCount.textContent = newCount;
+    });
+  </script>
+
+  <br><br><br>
 
   <div class="container">
   <h1 class="text-center mb-4">Welcome to Sudoku World</h1>
